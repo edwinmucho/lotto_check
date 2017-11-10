@@ -1,0 +1,12 @@
+당첨 번호 : <%=@js%>  +  <%=@bn%>
+<div>
+추첨 번호 :
+<% @lottonum.each do |num|%>
+  <b><%= num %></b>
+<%end%>
+</div>
+
+<br>
+맞춘 번호 : <%=@fnum.to_s%> <br>
+<%=@fnum.count%> 개 맞았습니다.<br>
+<%=@ranking%> 입니다.
